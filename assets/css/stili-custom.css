@@ -1,0 +1,882 @@
+/* Font family e colore di sfondo */
+
+header{
+  height: 75px;
+}
+
+
+body {
+ background-color: #fcfcfc;
+ font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+.alert{
+  width:100%;
+  margin-bottom:0px;
+}
+
+
+
+/* Classe per applicare un margine inferiore */
+
+.margine-bottom {margin-bottom: 20px;}
+
+/* Stili per sovrascrivere e modificare la Navbar di Bootstrap */
+.navbar {
+  border: none;
+}
+
+.navbar-nav {
+  margin-top: auto;
+}
+
+
+.navbar-brand {
+ width: 190px;
+ height: 75px;
+ background: url(logo.png);
+ background-size: contain;                    
+ background-repeat:   no-repeat; 
+ background-position: center;
+ 
+}
+
+.dropdown{
+
+  background-color: #5bc0de;
+}
+
+.container{
+  width: 100%;
+   margin-left: 0%;
+ }
+
+ .container-info{
+  text-align:center;
+ }
+
+ .img{
+  margin: 0 auto;
+ }
+
+ 
+
+.navbar-default {
+  height: 75px;
+ background-color: #5bc0de;
+ padding-top: 0px;
+ margin-bottom: 0px;
+ position: fixed;
+ width: 100%;
+ z-index: 1000; /* Assicura che la navbar rimanga sopra gli altri contenuti */
+}
+
+.navbar-default .navbar-nav > li > a {
+  margin-top:10px;
+  height: 50px;
+  position:center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333333;
+  border-bottom: 1px solid #357ebd;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #357ebd;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #357ebd;
+}
+
+.navbar-toggle {
+  border-radius: 0;
+}
+
+.navbar-default .navbar-toggle {
+ border: 1px solid #357ebd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #357ebd;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #357ebd;
+  border-bottom-color: #357ebd;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #357ebd;
+}
+
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+  border-top-color: #333;
+  border-bottom-color: #333;
+}
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color: #333;
+  border-bottom-color: #333;
+}
+
+@media screen and (min-width: 768px) {
+ .navbar-default .navbar-nav > li > a {
+  border-bottom: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  border-top: 2px solid #357ebd;
+  padding-top: 13px;
+}
+}
+
+/* Stili per sovrascrivere e modificare i menu dropdown di Bootstrap */
+
+.dropdown-menu {
+ padding: 0 0; 
+ border-radius: 0;
+ -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.175);
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.175);
+}
+.dropdown-menu > li > a {
+ padding: 7px 10px;
+ border-bottom: 1px solid #ccc;
+}
+
+
+
+/* Flexslider */
+
+.flexslider {
+ margin: 0 0 30px; 
+ background: #f8f8f8; 
+ border: 0;
+ border-top: 3px solid #357ebd; 
+ position: relative; 
+ -webkit-border-radius: 0; 
+ -moz-border-radius: 0; 
+ -o-border-radius: 0; 
+ border-radius: 0; 
+}
+.flex-control-paging li a {
+ width: 12px; 
+ height: 12px;
+ padding: 2px;
+ background: #357ebd; 
+ cursor: pointer; 
+ text-indent: -9999px; 
+ -webkit-border-radius: 20px; 
+ -moz-border-radius: 20px; 
+ -o-border-radius: 20px; 
+ border-radius: 20px; 
+ box-shadow: none;
+}
+.slides li {position: relative;height: 700px ;object-fit: cover;}
+.flex-caption {
+ position: absolute;
+ top: 35%;
+ right: 8%;
+}
+.flex-caption-text span {
+ display: inline-block;
+ font-size: 34px;
+ font-weight: bold;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ margin: 2px 0;
+ padding: 0 15px;
+ background-color: rgba(53, 189, 60, 0.8);
+ color: #dff0d8;
+}
+
+@media screen and (max-width: 767px) {
+ .flex-control-nav, .flex-control-pager, .flex-caption {display: none;}
+}
+
+/* Sezione progetti in evidenza */
+
+.box-progetto {
+ margin-bottom: 10px;
+ width:100%;
+ height:100%;
+ padding: 15px;
+ background-color: #86b6de;
+ -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  
+
+}
+
+.box-progetto > a > img{
+  width:400px;
+  height:230px;
+}
+.box-progetto h3, .box-progetto h4 {margin-top: 0;}
+
+
+.avvertenza{
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Stile per sovrascrivere e modificare le immagini thumbnail di Bootstrap */
+
+.thumbnail,.img-thumbnail {
+  border-radius: 0;
+  border: 1px solid #bbbbbb;
+  position: center;
+  height: fit-content;
+}
+
+
+/* Stili per sovrascrivere e modificare i bottoni standard di Bootstrap */
+
+.btn {
+  border: 0;
+  border-radius: 0;
+}
+.btn:focus {
+  outline: 0;
+}
+
+
+/* Testata */
+
+
+.header-sezione {
+  border-bottom: 2px solid #357ebd;
+}
+.header-sezione > h2 {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+ .header-sezione {
+ margin-left: 0;
+ margin-right: 0; 
+ }
+}
+/* Lavoro in evidenza */
+
+.box-lavoro-evidenza {
+ margin: 15px 0;
+}
+.box-lavoro-evidenza h3 {margin-top: 0}
+
+/* Stile per modificare e sovrascrivere i blockquote di Bootstrap */
+
+blockquote {
+ border-left: 5px solid #357ebd;
+}
+
+/* Pannelli dell'accordion basati sui panel di Bootstrap */
+
+.orders{
+  margin-left: 20px;
+}
+
+.panel-carousel {
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.panel-carousel-heading {
+  margin: -15px -15px 15px;
+  padding: 10px 15px;
+  font-size: 17.5px;
+  font-weight: 500;
+  background-color: #357ebd;
+  color: #fff;
+  border-bottom: 1px solid #dddddd;
+}
+.panel-carousel-footer {
+  margin: 15px -15px -15px;
+  padding: 10px 15px;
+  background-color: #ecf7ff;
+  border-top: 1px solid #dddddd;
+}
+
+.panel-carousel-control {
+  font-size: 16px;
+}
+.panel-carousel-control:hover,
+.panel-carousel-control:focus {
+  text-decoration: none;
+}
+
+/* Stili per modificare e sovrascrivere le nav-tab di Bootstrap */
+
+.nav-tabs {
+  margin-top: 15px;
+  border-bottom: 2px solid #357ebd;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 0;
+}
+.nav-tabs > li > a {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 2px;
+  line-height: 1.428571429;
+  border: 0;
+  border-radius: 0;
+}
+.nav-tabs > li > a:hover {
+  border-color: none;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #fff;
+  background-color: #357ebd;
+  border: none;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+.tab-content {padding: 15px 0;}
+
+/* Tabelle servizi */
+
+.servizi {
+ width: 100%;
+ margin-top: 15px;
+ text-align: center;
+}
+.servizi-titolo {
+ background-color: #5cb85c;
+}
+.servizi-prezzo {
+ background-color: #5cb85c;
+ color: #fff;
+}
+.servizi-opzione {
+ background-color: #dff0d8;
+}
+.servizi-footer {
+ background-color: #eeeeee;
+}
+
+.servizi-portfolio {
+ margin-top: 15px;
+ text-align: center;
+}
+.servizi-portfolio-titolo {
+ background-color: #5bc0de;
+}
+.servizi-portfolio-accedi {
+  background-color: #5bc0de;
+  margin-left: 30%;
+  margin-right: 30%;
+ }
+.servizi-portfolio-prezzo {
+ background-color: #5bc0de;
+ color: #fff;
+}
+.servizi-portfolio-opzione {
+ background-color: #a4eaff;
+}
+.servizi-portfolio-piatto {
+  background-color: #7bdd7b;
+ }
+.servizi-portfolio-collegamento{
+  background-color: rgb(255, 255, 255);
+}
+.servizi-portfolio-footer {
+ background-color: #eeeeee;
+}
+
+/* Form di login*/
+.insertLog{
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 800px;
+}
+
+
+/* Pulsanti acquisto servizi */
+
+.btn-round-bottom {
+ border-bottom-right-radius: 4px;
+ border-bottom-left-radius: 4px;
+}
+
+
+/*mappa*/
+.mappa{
+  width: 100%;
+}
+
+
+
+/* Footer */
+
+footer {
+ padding: 25px;
+ background-color: #c0c3c5;
+ color: rgb(0, 0, 0);
+}
+
+.footer-navigazione{
+  background-color: #c0c3c5;
+}
+
+footer a, footer a:hover {color: #0022ff;}
+#footer-copy {
+ padding: 10px 0 0 0;
+ border-top: 1px solid #fff;
+}
+
+
+/* Stile per modificare e sovrascrivere l'aspetto degli input di Bootstrap */
+
+.form-control {
+  height: 32px;
+  padding: 6px 12px;
+  color: #333333;
+  border-radius: 0;
+}
+
+
+
+/* Testata portfolio */
+
+.header-portfolio {
+ background-color: #5cb85c;
+ padding: 10px 15px;
+ border-bottom: 2px solid #357ebd;
+}
+
+.header-portfolio > h2 {
+ margin-bottom: 0;
+ text-align:center;
+ margin-top: 0;
+ color: #fff;
+}
+
+/* Stile per modificare e sovrascrivere l'aspetto il componente Breadcrumb di Bootstrap */
+
+.breadcrumb {
+  margin: 0;
+  background-color: transparent;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.overlay{
+  z-index: 1;
+  position: fixed;
+  overflow-y: auto;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target{
+  visibility:visible;
+  opacity: 1;
+}
+
+.wrapper{
+  margin: 70px auto;
+  padding: 20px;
+  background: #e7e7e7;
+  border-radius: 5px;
+  width: 30%;
+  position:relative;
+  transition: all 5s ease-in-out;
+}
+
+.wrapper > h3{
+  margin-left: 15px;
+}
+
+.wrapper h2{
+  margin-top: 0;
+  color: blue;
+}
+.wrapper .close{
+  position:absolute;
+  top: 20px;
+  right: 30px;
+  transitioN: all 200ms;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;    
+}
+
+.wrapper .content{
+  max-height: 30%;
+  overflow:auto;
+}
+.conferma{
+  margin-top: 5px;
+}
+
+.breadcrumb > li + li:before {
+  color: #fff;
+}
+
+.breadcrumb > .active {
+  color: #fff;
+}
+
+
+
+/* Modifica del componente thumbnails per il portfolio */
+
+.portfolio-filtro {margin-top: 15px;}
+
+.portfolio-thumbnail {
+  display: inline-block;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 15px 0;
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #eeeeee;
+  border: 1px solid #5cb85c;
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+.thumbnail {
+  display: inline-block;
+  display: block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+.portfolio-thumbnail > img,
+.portfolio-thumbnail > a > img,
+.portfolio-img-thumbnail {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+.portfolio-thumbnail:hover,
+.portfolio-thumbnail:focus {
+  border-color: #357ebd;
+}
+
+.portfolio-thumbnail > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio-thumbnail .caption {
+  padding: 9px;
+  color: #333333;
+}
+
+/* Stili per sovrascrivere e modificare il componente Pagination di Bootstrap */
+
+.pagination > li > a {
+  background-color: #5bc0de;
+}
+
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+  color: #999999;
+  background-color: #eeeeee;
+  border-color: #dddddd;
+}
+
+
+/* Titoli pagina contatti */
+
+.contatti-titoli {
+ margin-bottom: 15px;
+ border-bottom: 2px solid #357ebd;
+ padding-bottom: 10px;
+}
+
+/* Stili per sovrascrivere e modificare il componente Accordion/collapse di Bootstrap */
+
+.panel {
+  border: 1px solid #dddddd;
+  border-radius: 0;
+}
+
+.panel-heading {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.panel-title > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-default > .panel-heading {
+  background-color: #5cb85c;
+  border-color: #dddddd;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #dddddd;
+}
+
+.panel-default > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #dddddd;
+}
+
+p.titolo
+ {
+ font-family:"Times New Roman";
+ font-size:28px;
+ color:black;
+ text-align: center;
+ }
+
+ p.form
+ {
+ text-align: center;
+ }
+
+span.errore {
+  font-family:"Times New Roman";
+  font-size:14px;
+  color:red
+}
+
+.foto {
+  background: #ffff;
+  margin:0 auto;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 350px 350px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+}
+
+
+.img_piatti{
+  height: 200px;
+  width: 403px;
+  
+}
+
+
+.body_piatti{
+  background-color: #fff;
+}
+
+
+.descrizione{
+  text-align: left;
+  background-color: rgb(127, 194, 194);
+}
+.menu > h3{
+  text-align: left;
+  background-color: rgb(154, 234, 234);
+}
+
+.profilo {
+  margin-top: 20px;
+}
+
+.tabella-profilo{
+  border-collapse: collapse;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+table input[type="password"]
+{
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+  border-collapse: collapse;
+  width: 17%;
+  height: 10%;
+}
+
+.overlay input[type="password"]
+{
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+  border-collapse: collapse;
+  width: 45%;
+  height: 10%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.loginmodal-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  font-family: roboto;
+}
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  top: 5px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+} 
+
+.login-help{
+  font-size: 12px;
+}
+
+.ricerca{  
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.messaggio{
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.aggiunta{
+  text-align: center;
+}
+
+
